@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">
+                <h1>Super Logo</h1>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li>Nav 1</li>
+                    <li>Nav 2</li>
+                    <li>Nav 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <button value="btn-add-book">Add Book</button>
+            <form action="#" method="post" id="main-form">
+                <h2>Add a new book</h2>
+                <ul>
+                    <li>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title">
+                    </li>
+                    <li>
+                        <label for="author">Author</label>
+                        <input type="text" id="author" name="author">
+                    </li>
+                    <li>
+                        <label for="pages">Number of pages</label>
+                        <input type="number" id="pages" name="pages">
+                    </li>
+                    <li>
+                        <label for="read">Previously read?</label>
+                        <input type="checkbox" id="read" class="read">
+                    </li>
+                </ul>
+
+            </form>
+        </div>
+
+
+        <div class="books-grid-container">
+            <div class="book-card">
+                <ul>
+                    <li>title</li>
+                    <li>author</li>
+                    <li>pages</li>
+                    <li>read</li>
+                </ul>
+            </div>
+            <div class="book-card">
+                <ul>
+                    <li>title</li>
+                    <li>author</li>
+                    <li>pages</li>
+                    <li>read</li>
+                </ul>
+            </div>
+            <div class="book-card">
+                <ul>
+                    <li>title</li>
+                    <li>author</li>
+                    <li>pages</li>
+                    <li>read</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
