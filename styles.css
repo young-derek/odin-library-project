@@ -4,12 +4,13 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .main-container {
     display: grid;
     grid-template-columns: minmax(300px, 1fr) 5fr;
-    grid-template-rows: 1fr 6fr;    
+    grid-template-rows: 1fr 6fr;
     height: 100vh;
 
 }
@@ -58,20 +59,31 @@
     box-shadow: 2px 2px 2px black;
 }
 
-#main-form li {
+.sidebar {
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    padding: 5px;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
 }
 
-#main-form li input[type="text"],
-#main-form li input[type="number"] {
+.sidebar button {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: rgb(111, 111, 236);
+}
+
+#form-add-book li {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+#form-add-book li input {
     width: 50%;
     border-radius: 5px;
     border: 1px solid grey;
-}
-
-input.read {
-    width: 50%;
 }
