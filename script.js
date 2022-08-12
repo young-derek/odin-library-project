@@ -57,14 +57,14 @@ function displayBooks() {
 
         bookCard.classList.add('book-card');
 
-        title.textContent = book.title;
-        author.textContent = `By ${book.author}`;
-        pages.textContent = `${book.pages} pages`;
+        title.textContent = `Title: ${book.title}`;
+        author.textContent = `Author: ${book.author}`;
+        pages.textContent = `Pages: ${book.pages}`;
 
         if (book.read === true)
-            read.textContent = "Read";
+            read.textContent = "Status: Read";
         else
-            read.textContent = "Not Read";
+            read.textContent = "Status: Not Read";
 
         readBtn.textContent = "Toggle Read";
         removeBtn.textContent = "Remove";
